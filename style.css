@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
     margin: 0;
@@ -10,9 +10,9 @@
 body {
     background: #f9f9f9;
     min-height: 100vh;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
 }
-
+    
 header {
     position: absolute;
     display: flex;
@@ -23,4 +23,46 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 30px 100px;
+}
+
+.logo{
+  font-size: 2em;
+  color: #359381;
+  pointer-events: none;
+}
+
+.navbar a{
+  text-decoration: none;
+  color: #359381;
+  padding: 6px 15px;
+  border-radius: 20px;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.navbar a:hover, .navbar a.active{
+  background: #359381;
+  color: #ffff;
+}
+
+.parallax{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#text{
+  position: absolute;
+  font-size: 5em;
+  color: #3333;
+}
+
+.parallax img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
 }
